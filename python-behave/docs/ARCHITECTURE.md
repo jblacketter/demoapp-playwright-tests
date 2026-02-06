@@ -81,10 +81,10 @@ This document describes the design patterns and architecture of the Python Behav
 - Login state verification
 
 #### ProjectPage
-- Sidebar navigation
-- Column operations
-- Task verification with tag extraction
-- XPath ancestor traversal for card scoping
+- Sidebar navigation (button-based project selection)
+- Column operations (header-based task counting)
+- Task verification with tag extraction (Tailwind `bg-*` class detection)
+- Column-scoped card selection via `filter(has=...)` pattern
 
 ### Behave Hooks (environment.py)
 

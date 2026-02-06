@@ -24,8 +24,8 @@ cp .env.example .env
 # Run all tests
 behave
 
-# Run with HTML report
-behave --format=html --outfile=reports/report.html
+# Run all tests (HTML report generated automatically via behave.ini)
+behave
 ```
 
 ## Project Structure
@@ -55,11 +55,9 @@ python-behave/
 | `behave features/tasks/` | Run specific feature folder |
 | `HEADLESS=false behave` | Run with visible browser |
 
-### Generate HTML Report
+### HTML Reports
 
-```bash
-behave --format=html --outfile=reports/report.html
-```
+HTML reports are generated automatically to `reports/report.html` via `behave.ini` configuration. No extra flags needed.
 
 ## Test Coverage
 
