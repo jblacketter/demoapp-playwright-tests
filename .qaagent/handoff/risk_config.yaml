@@ -1,0 +1,44 @@
+# Risk scoring config — tuned for black-box UI/E2E testing
+version: 1
+
+scoring:
+  weights:
+    # Security lower — no source access, can only test auth flow
+    security: 1.5
+    # Coverage highest — primary concern for test framework
+    coverage: 3.0
+    # Churn N/A — testing a deployed app, not the source
+    churn: 0.0
+    # Complexity moderate — UI complexity affects test reliability
+    complexity: 1.0
+    # API exposure N/A — no direct API testing
+    api_exposure: 0.0
+    # A11y important — Kanban boards have accessibility concerns
+    a11y: 2.0
+    # Performance relevant — SPA load times, navigation speed
+    performance: 1.5
+  normalization: { strategy: minmax }
+  caps: { max_total: 100 }
+
+prioritization:
+  bands:
+    - { name: "P0", min_score: 80 }
+    - { name: "P1", min_score: 65 }
+    - { name: "P2", min_score: 50 }
+    - { name: "P3", min_score: 0 }
+
+confidence:
+  factors:
+    evidence_density_weight: 0.6
+    recency_weight: 0.3
+    tool_diversity_weight: 0.1
+  scale: [0.0, 1.0]
+
+policies:
+  allow_external_ai: false
+  max_external_tokens: 0
+
+reporting:
+  top_n_risks: 10
+  include_heatmap: true
+  include_cuj_view: true

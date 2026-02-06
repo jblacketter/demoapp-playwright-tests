@@ -1,0 +1,45 @@
+# QA Agent configuration for Kanban Board E2E Test Suite
+project:
+  name: "kanban-board-tests"
+  type: "generic"
+  version: "1.0.0"
+
+app:
+  dev:
+    base_url: "https://animated-gingersnap-8cf7f2.netlify.app/"
+    health_endpoint: "/"
+
+# No OpenAPI spec — this is a black-box UI testing project
+openapi:
+  auto_generate: false
+
+tests:
+  output_dir: "tests"
+  behave:
+    enabled: false
+  unit:
+    enabled: false
+  e2e:
+    enabled: true
+    framework: "playwright"
+    output_dir: "tests"
+  data:
+    enabled: true
+    output_dir: "data"
+    format: "json"
+
+exclude:
+  paths:
+    - "node_modules"
+    - ".auth"
+    - "playwright-report"
+    - "test-results"
+  tags: []
+
+risk_assessment:
+  disable_rules: []
+  severity_thresholds: {}
+
+llm:
+  enabled: false
+  fallback_to_templates: true

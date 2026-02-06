@@ -1,0 +1,92 @@
+{
+  "testCases": [
+    {
+      "id": "TC001",
+      "name": "Verify user authentication task in Web Application",
+      "project": "Web Application",
+      "taskName": "Implement user authentication",
+      "expectedColumn": "To Do",
+      "expectedTags": ["Feature", "High Priority"]
+    },
+    {
+      "id": "TC002",
+      "name": "Verify navigation bug in Web Application",
+      "project": "Web Application",
+      "taskName": "Fix navigation bug",
+      "expectedColumn": "To Do",
+      "expectedTags": ["Bug"]
+    },
+    {
+      "id": "TC003",
+      "name": "Verify design system updates in Web Application",
+      "project": "Web Application",
+      "taskName": "Design system updates",
+      "expectedColumn": "In Progress",
+      "expectedTags": ["Design"]
+    },
+    {
+      "id": "TC004",
+      "name": "Verify push notification system in Mobile Application",
+      "project": "Mobile Application",
+      "taskName": "Push notification system",
+      "expectedColumn": "To Do",
+      "expectedTags": ["Feature"]
+    },
+    {
+      "id": "TC005",
+      "name": "Verify offline mode in Mobile Application",
+      "project": "Mobile Application",
+      "taskName": "Offline mode",
+      "expectedColumn": "In Progress",
+      "expectedTags": ["Feature", "High Priority"]
+    },
+    {
+      "id": "TC006",
+      "name": "Verify app icon design in Mobile Application",
+      "project": "Mobile Application",
+      "taskName": "App icon design",
+      "expectedColumn": "Done",
+      "expectedTags": ["Design"]
+    },
+    {
+      "id": "TC007",
+      "name": "Verify API integration in Web Application Review column",
+      "project": "Web Application",
+      "taskName": "API integration",
+      "expectedColumn": "Review",
+      "expectedTags": ["Feature", "High Priority"]
+    },
+    {
+      "id": "TC008",
+      "name": "Verify documentation task in Web Application Done column",
+      "project": "Web Application",
+      "taskName": "Update documentation",
+      "expectedColumn": "Done",
+      "expectedTags": ["Feature"]
+    },
+    {
+      "id": "TC009",
+      "name": "Verify social media calendar in Marketing Campaign",
+      "project": "Marketing Campaign",
+      "taskName": "Social media calendar",
+      "expectedColumn": "To Do",
+      "expectedTags": ["Feature"]
+    },
+    {
+      "id": "TC010",
+      "name": "Verify email campaign in Marketing Campaign",
+      "project": "Marketing Campaign",
+      "taskName": "Email campaign",
+      "expectedColumn": "In Progress",
+      "expectedTags": ["Design", "High Priority"]
+    },
+    {
+      "id": "TC011",
+      "name": "Verify landing page copy in Marketing Campaign",
+      "project": "Marketing Campaign",
+      "taskName": "Landing page copy",
+      "expectedColumn": "Review",
+      "expectedTags": ["Design"]
+    }
+  ]
+}

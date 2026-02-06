@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Test artifacts (generated during runs)
+playwright-report/
+test-results/
+.auth/
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed for test runs)
+docs/
+*.md
+!README.md
+
+# Environment (credentials should be passed at runtime)
+.env
+.env.*
+!.env.example
+
+# Claude/AI configuration
+.claude/
+ai-handoff.yaml

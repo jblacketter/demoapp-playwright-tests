@@ -1,0 +1,83 @@
+# Critical User Journeys — Kanban Board Application
+version: 1
+product: kanban-board
+
+journeys:
+  - id: auth_login
+    name: "User logs in with valid credentials"
+    components: ["src/pages/login.page.ts", "tests/auth.setup.ts"]
+    apis: []
+    acceptance:
+      - "Valid credentials (admin/password123) produce successful login"
+      - "User is redirected to project board after login"
+      - "Login form is no longer visible after auth"
+      - "Auth state persists across page navigations"
+
+  - id: auth_negative
+    name: "Invalid login attempts handled gracefully"
+    components: ["src/pages/login.page.ts"]
+    apis: []
+    acceptance:
+      - "Invalid password shows error message"
+      - "Empty username/password shows validation feedback"
+      - "Login form remains accessible after failed attempt"
+
+  - id: project_navigation
+    name: "User navigates between projects"
+    components: ["src/pages/project.page.ts"]
+    apis: []
+    acceptance:
+      - "All 3 projects visible in sidebar: Web Application, Mobile Application, Marketing Campaign"
+      - "Clicking a project updates the board header"
+      - "Board content changes to reflect selected project"
+      - "Switching between projects preserves sidebar state"
+
+  - id: board_structure
+    name: "Kanban board renders correctly"
+    components: ["src/pages/project.page.ts"]
+    apis: []
+    acceptance:
+      - "All 4 columns visible: To Do, In Progress, Review, Done"
+      - "Column headers display task count (e.g., 'To Do (2)')"
+      - "Columns render in correct order left to right"
+      - "Empty columns display with (0) count"
+
+  - id: task_verification_web
+    name: "Web Application tasks verified"
+    components: ["data/test-cases.json", "tests/task-verification.spec.ts"]
+    apis: []
+    acceptance:
+      - "'Implement user authentication' in To Do with Feature, High Priority"
+      - "'Fix navigation bug' in To Do with Bug"
+      - "'Design system updates' in In Progress with Design"
+      - "'API integration' in Review with Feature, High Priority"
+      - "'Update documentation' in Done with Feature"
+
+  - id: task_verification_mobile
+    name: "Mobile Application tasks verified"
+    components: ["data/test-cases.json", "tests/task-verification.spec.ts"]
+    apis: []
+    acceptance:
+      - "'Push notification system' in To Do with Feature"
+      - "'Offline mode' in In Progress with Feature, High Priority"
+      - "'App icon design' in Done with Design"
+      - "Review column is empty (0 tasks)"
+
+  - id: task_verification_marketing
+    name: "Marketing Campaign tasks verified"
+    components: ["data/test-cases.json", "tests/task-verification.spec.ts"]
+    apis: []
+    acceptance:
+      - "'Social media calendar' in To Do with Feature"
+      - "'Email campaign' in In Progress with Design, High Priority"
+      - "'Landing page copy' in Review with Design"
+      - "Done column is empty (0 tasks)"
+
+coverage_targets:
+  auth_login: 90
+  auth_negative: 70
+  project_navigation: 80
+  board_structure: 80
+  task_verification_web: 100
+  task_verification_mobile: 100
+  task_verification_marketing: 100
