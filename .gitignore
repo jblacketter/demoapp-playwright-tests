@@ -6,6 +6,9 @@ node_modules/
 .env.local
 .env.*.local
 
+# Reports
+reports/
+
 # Playwright
 playwright-report/
 test-results/
