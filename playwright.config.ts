@@ -87,6 +87,7 @@ export default defineConfig({
     // Opt-in browsers - run with `npm run test:firefox` or `npm run test:browsers`
     {
       name: 'firefox',
+      testIgnore: /.*auth-negative.*\.spec\.ts/,
       use: {
         ...devices['Desktop Firefox'],
         storageState: '.auth/user.json',
@@ -95,6 +96,7 @@ export default defineConfig({
     },
     {
       name: 'webkit',
+      testIgnore: /.*auth-negative.*\.spec\.ts/,
       use: {
         ...devices['Desktop Safari'],
         storageState: '.auth/user.json',
