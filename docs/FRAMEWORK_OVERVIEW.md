@@ -649,4 +649,6 @@ gantt
 
 *Reliable. Maintainable. Scalable.*
 
+> **Experimental Alternative:** A Python Behave (BDD) implementation covering the same 25 scenarios is available in `python-behave/`. See [`python-behave/docs/README.md`](../python-behave/docs/README.md) for details.
+
 </div>

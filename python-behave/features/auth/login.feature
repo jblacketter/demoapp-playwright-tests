@@ -1,4 +1,4 @@
-@auth @smoke
+@auth @smoke @regression
 Feature: User Authentication
   As a user
   I want to log in to the application

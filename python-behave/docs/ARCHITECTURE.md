@@ -131,7 +131,6 @@ Each row generates a separate test case in reports.
 | Package | Purpose |
 |---------|---------|
 | behave | BDD test runner |
+| behave-html-formatter | HTML reports |
 | playwright | Browser automation |
 | python-dotenv | Environment config |
-| assertpy | Fluent assertions |
-| behave-html-formatter | HTML reports |

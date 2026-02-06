@@ -200,6 +200,12 @@ The HTML report shows failed tests with:
 
 ---
 
+## Experimental: Python Behave
+
+An experimental BDD implementation using Python Behave is available in `python-behave/`. It covers the same 25 scenarios with Gherkin feature files. See [`python-behave/docs/README.md`](../python-behave/docs/README.md) for setup instructions.
+
+---
+
 <div align="center">
 
 **Need help?** Open an issue or check `docs/` for detailed guides.

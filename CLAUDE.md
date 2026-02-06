@@ -4,6 +4,8 @@
 
 Playwright-driven test suite using TypeScript with data-driven design patterns. This framework is designed by and for experienced SDETs who value quality, maintainability, and scalability.
 
+> **Note:** An experimental Python Behave (BDD) implementation exists in `python-behave/`. The primary deliverable is this TypeScript Playwright framework.
+
 ## SDET Mindset
 
 When working on this project, think like a **Senior SDET with 20+ years of experience**:

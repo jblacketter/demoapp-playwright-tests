@@ -1,4 +1,4 @@
-@board @navigation
+@board @navigation @regression
 Feature: Project Navigation
   As a user
   I want to switch between projects

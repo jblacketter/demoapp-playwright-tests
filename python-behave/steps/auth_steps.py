@@ -25,15 +25,15 @@ def step_login_valid(context):
 def step_login_with_credentials(context, username: str, password: str):
     """Login with specified credentials."""
     context.login_page.login(username, password)
-    # Brief wait to allow any error messages to appear
-    context.page.wait_for_timeout(1000)
+    # Wait for the page to settle after login attempt
+    context.page.wait_for_load_state("networkidle")
 
 
 @when("I login with empty credentials")
 def step_login_empty(context):
     """Login with empty username and password."""
     context.login_page.login("", "")
-    context.page.wait_for_timeout(1000)
+    context.page.wait_for_load_state("networkidle")
 
 
 @then("I should see the project sidebar")

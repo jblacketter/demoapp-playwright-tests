@@ -37,3 +37,9 @@ npm-debug.log*
 
 # Coverage
 coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

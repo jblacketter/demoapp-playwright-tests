@@ -59,6 +59,8 @@ A Kanban-style project management board built with React + TypeScript (Vite). Fe
 | Mobile Application | TC004 | TC005 | (empty) | TC006 |
 | Marketing Campaign | TC009 | TC010 | TC011 | (empty) |
 
+**Note:** An equivalent Python Behave (BDD) implementation exists in `python-behave/` with matching coverage across all 25 scenarios. See [`python-behave/docs/README.md`](../python-behave/docs/README.md).
+
 ### Test Suite Breakdown
 
 | Suite | Tests | Type |

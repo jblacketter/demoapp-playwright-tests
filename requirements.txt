@@ -1,1 +1,3 @@
+# Root-level Python dependency for Playwright browser installation only.
+# For the Python Behave test framework, see python-behave/requirements.txt
 playwright

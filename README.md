@@ -292,6 +292,10 @@ See `docs/FRAMEWORK_OVERVIEW.md` for CI pipeline examples (GitHub Actions, GitLa
 3. Ensure all checks pass before committing
 4. Add tests for new functionality
 
+## Experimental: Python Behave Framework
+
+An experimental Python Behave (BDD) implementation of this test suite exists in `python-behave/`. It covers the same 25 scenarios using Gherkin feature files and Playwright for browser automation. See [`python-behave/docs/README.md`](python-behave/docs/README.md) for setup and usage instructions.
+
 ## License
 
 ISC

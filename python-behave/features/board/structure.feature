@@ -1,4 +1,4 @@
-@board @structure
+@board @structure @regression
 Feature: Board Structure Verification
   As a user
   I want to see the correct board structure

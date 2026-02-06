@@ -1,4 +1,4 @@
-@auth @negative @no_auth
+@auth @negative @no_auth @regression
 Feature: Negative Authentication Tests
   As a security measure
   Invalid credentials should be rejected

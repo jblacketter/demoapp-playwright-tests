@@ -1,9 +1,10 @@
-@tasks @verification @data-driven
+@tasks @verification @data-driven @regression
 Feature: Task Verification
   As a QA engineer
   I want to verify tasks are in the correct columns with correct tags
   So that I can ensure the Kanban board displays data accurately
 
+  @smoke
   Scenario Outline: Verify task in correct column with expected tags
     When I navigate to the "<project>" project
     Then I should see task "<task_name>" in the "<column>" column
